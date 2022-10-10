@@ -1,0 +1,52 @@
+<ion-header no-border>
+  <ion-toolbar color="success">
+    <ion-title>Register</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list >
+    <div>
+    <ion-item>
+    <ion-label position="floating">Fullname</ion-label>
+    <ion-input type="text" placeholder="Fullname" [(ngModel)]="your_name"></ion-input>
+ </ion-item>
+
+ <ion-item>
+  <ion-label position="floating">Email</ion-label>
+  <ion-input type="text" placeholder="Email"  [(ngModel)]="email_address"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label position="floating">Gender</ion-label>
+  <ion-input type="text" placeholder="Gender"  [(ngModel)]="gender"></ion-input>
+
+</ion-item>
+
+<ion-item>
+  <ion-label position="floating">Date of Birth</ion-label>
+  <ion-input type="text" placeholder="Date of Birth"  [(ngModel)]="date_birth"></ion-input>
+
+</ion-item>
+<ion-item>
+  <ion-label position="floating">Password</ion-label>
+  <ion-input type="password" placeholder="Password" [(ngModel)]="password"></ion-input>
+</ion-item>
+
+<ion-item>
+<ion-label position="floating">Confirm Password</ion-label>
+<ion-input type="password" placeholder="Confirm Password"  [(ngModel)]="confirm_pass"></ion-input>
+</ion-item>
+
+
+
+</div>
+
+<ion-button expand="full" class="no-padding" color="success" [disabled]="disableButton" (click)="tryRegister()">Register</ion-button>
+
+  </ion-list>
+
+</ion-content>
